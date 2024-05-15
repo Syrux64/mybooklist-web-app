@@ -24,6 +24,14 @@ npm install exp	ress nodemon mysql dotenv firebase cors axios lodash path
 
 cd my-book-list && npm install && npm install react-router-dom
 ```
+In the root directory, do the following to start the server
+```bash
+nodemon index.js
+```
+In the my-book-list directory, do the following to build
+```bash
+npm run build
+```
 ## Environment variables
 .env file in the root directory for MySQL db and API key of google books
 ```env
