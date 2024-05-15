@@ -1,0 +1,254 @@
+body{
+    font-family: 'afacad';
+}
+
+
+
+.bookDiv{
+    /* border-style: dotted; */
+    display: flex;
+    /* width: 700px; */
+}
+
+.names{
+    background-color: #6B240C;
+    padding: 5px;
+    color: white;
+}
+
+.names p{
+    margin: 0px;
+    
+}
+
+.authors{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.title{
+    font-size: 18px;
+    
+}
+
+
+
+.addList{
+    display: flex;
+}
+
+.addList button{
+    background-color: #E48F45;
+    flex:1;
+    margin: 8px;
+    margin-top: 0px;
+    height: 30px;
+    border-radius: 12px;
+    border-width: 0px;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.addList button:hover{
+    background-color: #e48f45ce;
+    flex:1;
+    margin: 8px;
+    margin-top: 0px;
+    height: 30px;
+    border-radius: 12px;
+    border-width: 0px;
+    color: white;
+    font-size: 15px;
+
+}
+
+
+.bookCover{
+    /* background-color: rgba(0, 255, 255, 0.534); */
+    
+    display: inline-block;
+    margin: 5px;
+    border-style: groove;
+    border-width: 2px;
+    padding: 3px;
+}
+
+.bookCover img{
+    width: 200px;
+}
+
+
+.details{
+    display: flex;
+    align-items: center;
+    background-color: #f5cca09c;
+    padding: 15px;
+    margin: 5px;
+    border-style: groove;
+    border-width: 1px;
+    font-size: 18px;
+
+}
+.details p{
+    margin: 0px;
+}
+
+.score{
+    border-style: groove;
+    border-width: 2px;
+    border-top: 0px;
+    border-left: 0px;
+    border-bottom: 0px;
+    display: inline-block;
+    padding-right: 7px;
+}
+
+.scoreTitle{
+    background-color: #E48F45;
+    display: flex;
+    color: white;
+    font-size: 16px;
+    width: 60px;
+    height: 20px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2px;
+
+}
+
+.scoreRating{
+    display: flex;
+    width: 60px;
+    height: 45px;
+    align-items: center;
+    justify-content: center;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.publishedDiv{
+    text-align: center;
+    border-style: groove;
+    border-width: 2px;
+    border-top: 0px;
+    border-left: 0px;
+    border-bottom: 0px;
+    padding: 7px;
+}
+
+.publishedDateTitle p {
+    margin: 0px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+
+.synopsisDiv{
+    margin: 5px;
+    
+    border-style: groove;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-width: 2px;
+    padding-bottom: 5px;
+}
+
+.synopsisDiv p{
+    font-weight: bold;
+    font-size: 30px;
+    margin: 0px;
+}
+
+
+.contents{
+    display: inline-block;
+    margin: 0px;
+}
+
+.description{
+    margin: 0px;
+    display: inline-block;
+    font-size: 20px;
+}
+
+
+.description p{
+    margin: 0px;
+}
+
+
+@media (max-width: 425px) {
+    .bookDiv {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .bookCover {
+        align-items: center;
+        justify-content: center;
+        display: inline-block;
+        margin: 5px;
+        border-style: groove;
+        border-width: 2px;
+        padding: 3px;
+    }
+
+    .details {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 10px;
+        background-color: #f5cca09c;
+        padding: 15px;
+        margin: 5px;
+        border-style: groove;
+        border-width: 1px;
+        font-size: 18px;
+        justify-content: center;
+        align-items: center; 
+    }
+
+    .score {
+        border-style: groove;
+        border-width: 2px;
+        border-top: 0px;
+        border-left: 0px;
+        border-right: 0px;
+        border-bottom: 1px solid rgba(51, 48, 48, 0.664); 
+        display: inline-block;
+        justify-content: center; 
+        align-items: center; 
+    }
+
+
+    
+    .scoreRating{
+        display: flex;
+        width: 60px;
+        height: 45px;
+        align-items: center;
+        justify-content: center;
+        font-size: 36px;
+        font-weight: bold;
+    }
+
+    .publishedDiv,
+    .synopsisDiv {
+        border-style: groove;
+        border-width: 2px;
+        border-top: 0px;
+        border-left: 0px;
+        border-right: 0px;
+        border-bottom: 1px solid rgba(51, 48, 48, 0.664); 
+        display: inline-block;
+        justify-content: center; /* Center horizontally */
+        align-items: center; /* Center vertically */
+    }
+
+    .description{
+        margin: 0px;
+        display: inline-block;
+        font-size: 20px;
+    }
+}

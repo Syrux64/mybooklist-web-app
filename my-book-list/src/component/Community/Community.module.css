@@ -1,0 +1,66 @@
+.section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+
+.communityDiv{
+    
+    display: flex;
+    padding: 10px;
+    border-style: groove;
+    background-color: rgba(210, 105, 30, 0.493);
+    border-width: 1px;
+    border-color: gray;
+    border-radius: 25px;
+    width: 600px;
+    margin: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.24); 
+}
+
+.postContent{
+    margin-left: 10px;
+}
+
+.userAbout{
+    margin-top: 15px;
+    border: 1px;
+    border-style: groove;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-width: 1px;
+    border-color: gray;
+}
+
+.username{
+    font-size: 30px;
+    font-weight: 700;
+    color: #6B240C;
+}
+
+.date{
+    color: #3d340c;
+    font-weight: 300;
+    font-style: oblique;
+}
+
+.status{
+    font-size: 15px;
+    font-style: oblique;
+}
+
+.content p{
+    font-size: larger;
+}
+
+
+@media (max-width: 425px) {
+    
+    .communityDiv{
+        width: 90%;
+    }
+
+}

@@ -1,0 +1,131 @@
+.addBook{
+    display: flex;
+}
+
+.bookInfo{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    align-items: center;
+    border-width: 2px;
+    border-style: groove;
+    border-top: 0px;
+    border-bottom: 0px;
+    border-left: 0px;
+    width: 250px;
+    text-align: center;
+
+}
+
+.bookInfo img{
+    width: 150px;
+}
+
+.authors{
+    font-style: italic;
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.title{
+    font-size: 18px;
+}
+
+.input form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 10px;
+    
+}
+
+.input label{
+    font-size: 20px;
+    
+}
+
+.input textarea{
+    resize: none;
+    text-align: left; 
+    vertical-align: top;
+    font-size: 18px;
+    font-family: 'Afacad';
+}
+
+
+.inputData select{
+    text-align: center;
+    margin-left: 10px;
+    height: 25px;
+    border-radius: 5px;
+
+}
+
+.inputData textarea{
+    background-color: rgba(250, 235, 215, 0.644);
+}
+
+.inputData button{
+    background-color: #E48F45;
+    flex:1;
+    height: 30px;
+    border-radius: 12px;
+    border-width: 0px;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    width: 80px;
+}
+
+.inputData button:hover{
+    background-color: #e48f45ce;
+    flex:1;
+    height: 30px;
+    border-radius: 12px;
+    border-width: 0px;
+    color: white;
+    font-size: 15px;
+
+}
+
+
+@media (max-width: 425px) {
+    .bookInfo {
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+        align-items: center;
+        border-width: 2px;
+        border-style: groove;
+        border-top: 0px;
+        border-right: 0px;
+        border-bottom: 1px;
+        border-left: 0px;
+        width: 100%; 
+        max-width: 300px;
+        border-bottom: 1px solid rgba(51, 48, 48, 0.664); 
+        text-align: center;
+    }
+
+    .addBook {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .input{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        align-items: center;
+    }
+
+    textarea{
+        width: 300px;
+    }
+
+    
+    
+
+}
