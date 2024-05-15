@@ -13,7 +13,7 @@ Implemented using Node.js, React.js, Express.js, MySQL and Firebase.
 ## To build
 #### Clone the repo
 ```bash
-git clone [https://github.com/Syrux64/mybooklist-web-app.git](https://github.com/Syrux64/mybooklist-web-app.git)
+git clone https://github.com/Syrux64/mybooklist-web-app.git
 cd mybooklist-web-app
 ```
 #### Install the required modules
