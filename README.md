@@ -1,6 +1,8 @@
 ﻿# MyBookList 📚
 A web app inspired from MyAnimeList. Use this to create a list of the books that you have read or planning to read.
 Implemented using Node.js, React.js, Express.js, MySQL and Firebase. 
+### URL
+https://app-mybooklist-3uvqcl6b4a-el.a.run.app/
 
 ## Demo
 ![image](https://github.com/Syrux64/mybooklist-web-app/assets/118998822/a988c071-9fd5-421d-a17c-ab0a6de9fdbf)
