@@ -37,6 +37,7 @@
 
 .username{
     font-size: 30px;
+    margin: 3px;
     font-weight: 700;
     color: #6B240C;
 }
@@ -44,15 +45,18 @@
 .date{
     color: #3d340c;
     font-weight: 300;
+    margin: 3px;
     font-style: oblique;
 }
 
 .status{
     font-size: 15px;
     font-style: oblique;
+    margin: 3px;
 }
 
 .content p{
+    margin: 3px;
     font-size: larger;
 }
 

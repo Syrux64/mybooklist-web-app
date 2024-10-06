@@ -1,12 +1,12 @@
-const { createClient } = require('@supabase/supabase-js'); // Use require
-const express = require('express'); // Use require
-const dotenv = require('dotenv'); // Use require
+const { createClient } = require('@supabase/supabase-js');
+const express = require('express');
+const dotenv = require('dotenv');
 
-dotenv.config(); // Load environment variables
-
-const router = express.Router(); // Create an express router
-
+dotenv.config();
+const router = express.Router();
 const supabase = createClient(process.env.DB_URL, process.env.DB_KEY)
+
+
 
 // Get username to show on the topbar
 router.post('/get/username', async (req, res) => {
@@ -20,7 +20,7 @@ router.post('/get/username', async (req, res) => {
         return res.status(500).json({ error: 'Internal Server Error' });
     }
 
-    return res.status(200).json({ userName: data.name }); // Assuming there's only one user with the provided email
+    return res.status(200).json({ userName: data.name });
 });
 
 // Submit user data to DB
