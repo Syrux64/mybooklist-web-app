@@ -5,12 +5,8 @@ import { useState, useEffect } from 'react';
 import axios from 'axios';
 
 
-
-
 const Community = () => {
-
     const [postData, setPostData] = useState(null);
-
     useEffect(() => {
         const fetchData = async () => {
             try {
@@ -23,6 +19,18 @@ const Community = () => {
         fetchData();
     }, []);
 
+    // convert to readable time
+    const convertTime = (rawDate) =>{
+        let date = new Date(rawDate);
+        let time = date.toLocaleTimeString(undefined, {
+            hour: '2-digit',
+            minute: '2-digit',
+            hour12: true
+        });
+        date = date.toLocaleDateString() + " " + time;
+        return date;
+    }
+
 
     return(
         <div className={styles.section}>
@@ -30,15 +38,15 @@ const Community = () => {
             <div className={styles.communityDiv}>
                 <div>
                     <BookCard 
-                        title={post.bookTitle}
-                        cover={post.bookCover}
-                        author={post.bookAuthor}/>
+                        title={post.book.title}
+                        cover={post.book.cover}
+                        author={post.book.author}/>
 
                 </div>
                 <div className={styles.postContent}>
                     <div className={styles.userAbout}>
-                        <div className={styles.username}>{post.postedBy}</div>
-                        <div className={styles.date}>{post.postedDate}</div>
+                        <div className={styles.username}>{post.user.name}</div>
+                        <div className={styles.date}>{convertTime(post.postedDate)}</div>
                     </div>
                     <div className={styles.content}>
                         <div className={styles.status}>{post.status}</div>
@@ -49,11 +57,9 @@ const Community = () => {
 
         ))
     }
-        </div>
+    </div>
         
     )
-
-   
 }
 
 export default Community;

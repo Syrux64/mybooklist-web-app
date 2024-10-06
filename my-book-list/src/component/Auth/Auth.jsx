@@ -6,9 +6,10 @@ import { createUserWithEmailAndPassword, signInWithEmailAndPassword } from 'fire
 import { auth } from '../../../Firebase/firebase';
 import { useState } from 'react';
 
+import '../../../../Backend/Database/supabaseClient'
+
 const Auth = ({user}) => {
     if(user) window.location='/home';
-
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const [userName, setUserName] = useState("");

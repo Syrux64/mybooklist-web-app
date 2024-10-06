@@ -18,7 +18,7 @@ cd mybooklist-web-app
 ```
 #### Install the required modules
 ```bash
-npm install exp	ress nodemon mysql dotenv firebase cors axios lodash path
+npm install express nodemon @supabase/supabase-js dotenv firebase cors axios lodash path
 
 cd my-book-list && npm install && npm install react-router-dom
 ```
@@ -31,7 +31,7 @@ In the my-book-list directory, do the following to build
 npm run build
 ```
 ## Environment variables
-.env file in the root directory for MySQL db and API key of google books
+.env file in the root directory for PostgreSQL db and API key of google books
 ```env
 PORT=port
 API_KEY_BOOKS=api_key_for_google_books
